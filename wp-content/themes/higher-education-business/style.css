@@ -1,0 +1,500 @@
+/*
+Theme Name: Higher Education Business
+Template: bizberg
+Text Domain: higher-education-business
+Author: Bizberg Themes
+Author URI: https://bizbergthemes.com/ 
+Theme URI: https://bizbergthemes.com/downloads/higher-education-business/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: Higher Education Business is the child theme of Bizberg WordPress Theme. The theme is a clean & modern Education WordPress Theme. Higher Education Business is suitable for any tuition, marketing, bookselling, university, workshop, college, school, course hub, training center, blogging, or educational institution. Also, the Higher Education Business theme is a perfect solution for your educational websites. This Free WordPress theme is fully responsive, cross-browser compatible, translation ready & SEO friendly. If you run into any problems while using our theme, you can refer to extensive documentation or contact our friendly support team. It fully supports Elementor, and all the sections are made from Elementor. Higher Education Business is a free WordPress eLearning or LMS theme. This theme is fully compatible with LearnPress – WordPress LMS Plugin.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.3
+Requires at least: 4.9
+Requires PHP: 5.6
+Tested up to: 6.0
+*/
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 0;
+}
+
+@media (pointer: fine){
+    .blog-nosidebar-1#blog.blog-lists .no-sidebars {
+        padding: 5px;
+        margin-bottom: 0;
+    }
+}
+
+.blog-listing.no-sidebars .blog-post header.entry-header{
+    margin-top: 0 !important;
+}
+
+.services_wrapper{
+    padding: 80px 0;
+}
+
+.services_wrapper .title_wrapper,
+.services_2_wrapper .title_wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.services_wrapper .title_wrapper h4,
+.services_2_wrapper .title_wrapper h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffb606;
+    letter-spacing: 0.5px;
+}
+
+.services_wrapper .title_wrapper h3,
+.services_2_wrapper .title_wrapper h3 {
+    color: #000;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.services_wrapper .services-item {
+    background: #ffffff;
+    box-shadow: 0px 0px 45px 22px #eee;
+    padding: 40px 30px 40px 30px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0px -7px 0 0;
+}
+
+.services_wrapper .services-item .services-icon {
+    margin-bottom: 15px;
+}
+
+.services_wrapper .services-item .services-content .title {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.services_wrapper .services-item .services-content .title a,
+.services_2_wrapper .front-title-part h3 a {
+    color: #000;
+}
+
+.services_wrapper .services-item .services-content .title a:hover{
+    color: #ffb606;
+}
+
+.services_wrapper .services-item .services-content p {
+    font-size: 15px;
+}
+
+.services_wrapper .items_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    column-gap: 22px;
+    grid-row-gap: 15px;
+}
+
+.services_wrapper .services-item .services-icon i {
+    font-size: 45px;
+    color: #ffb606;
+}
+
+.services_2_wrapper {
+    background: #fafafa;
+    padding: 80px 0;
+}
+
+.services_2_wrapper .flip-box-inner {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    backface-visibility: hidden;
+}
+
+.services_2_wrapper .flip-box-inner .flip-box-wrap {
+    position: relative;
+    -webkit-transform: translateZ(0);
+    perspective: 1e3px;
+}
+
+.services_2_wrapper .flip-box-inner .flip-box-wrap .front-part {
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+    transform: rotateY(0);
+    top: 0;
+    right: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    height: 300px;
+    background-color: initial;
+    background-position: 50%;
+    background-clip: padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1e3px;
+    perspective: 1e3px;
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition: -webkit-transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition: transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition: transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275), -webkit-transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+}
+
+.services_2_wrapper .flip-box-inner .flip-box-wrap .back-part {
+    position: absolute;
+    z-index: -1;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #562dd4;
+    transform: rotateY(-180deg);
+    top: 0;
+    right: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    height: 300px;
+    background-color: initial;
+    background-position: 50%;
+    background-clip: padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1e3px;
+    perspective: 1e3px;
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition: -webkit-transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition: transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition: transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275), -webkit-transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+}
+
+.services_2_wrapper .flip-box-inner .flip-box-wrap .front-part .front-content-part {
+    background-color: #fff;
+    text-align: left;
+    padding: 50px 40px 50px 40px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 10px 0px #eee;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    transition: all .9s ease 0s;
+}
+
+.services_2_wrapper .flip-box-inner .flip-box-wrap .back-part:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #0082f1 0%, #0082f1 58%);
+    content: "";
+}
+
+.services_2_wrapper .flip-box-inner .flip-box-wrap .back-part .back-front-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    transition: all .9s ease 0s;
+}
+
+.services_2_wrapper .flip-box-inner:hover .flip-box-wrap .front-part {
+    transform: rotateY(180deg);
+}
+
+.services_2_wrapper .flip-box-inner:hover .flip-box-wrap .back-part {
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+.services_2_wrapper .flip-box-inner:hover .flip-box-wrap .back-part .back-front-content {
+    right: 0;
+}
+
+.services_2_wrapper .back-title-part h3,
+.services_2_wrapper .front-title-part h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.services_2_wrapper .back-title-part h3 a,
+.services_2_wrapper .back-title-part h3 a:hover {
+    color: #fff;
+}
+
+.services_2_wrapper .back-desc-part p {
+    color: #fff;
+    padding: 15px 0;
+}
+
+.services_2_wrapper .front-desc-part p {
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.services_2_wrapper .back-btn-part a{
+    background: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-top: 5px;
+    color: #000;
+}
+
+.services_2_wrapper .back-btn-part a:hover{
+    color: #000 !important;   
+}
+
+.services_2_wrapper .front-icon-part .icon-part i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffb606;
+}
+
+.services_2_wrapper .item_wrapper{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 8px;
+}
+
+.naedu-categories .category-item a img{
+    margin: 0 auto;
+}
+
+body .lp-archive-courses .learn-press-courses[data-layout=list] .course .course-item .course-wrap-thumbnail {
+    width: 40%;
+}
+
+body .lp-archive-courses .learn-press-courses .course .course-item .course-content .course-instructor a{
+    color: #000;
+}
+
+body .lp-archive-courses .learn-press-courses[data-layout=list] .course .course-item {
+    align-items: center;
+}
+
+body .lp-archive-courses .learn-press-courses .course .course-item .course-content .course-instructor {
+    line-height: 30px;
+}
+
+body .elementor-widget-container .lp-archive-courses .learn-press-courses[data-layout=list] .course {
+    background: #fff;
+    box-shadow: 5px 5px 25px #eee;
+}
+
+body.single-lp_course .lp-archive-courses .learn-press-breadcrumb,
+body.post-type-archive-lp_course .learn-press-breadcrumb,
+body.learnpress-checkout .learn-press-breadcrumb,
+body.tax-course_category .learn-press-breadcrumb {
+    display: none;
+}
+
+body.single-lp_course header#masthead{
+    border: none !important;
+}
+
+body .lp-archive-courses .course-summary .course-summary-content .course-detail-info .course-info-left .course-meta .course-meta__pull-left .meta-item .meta-item__value label {
+    color: #fff;
+}
+
+body .course-meta.course-meta-primary .meta-item-instructor .meta-item__value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body .curriculum-sections .section-header {
+    margin: 0;
+}
+
+body #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-item__loadmore button,
+body #learn-press-course-curriculum.course-curriculum .curriculum-more__button,
+body .learnpress_avatar__cropper .learnpress_avatar__button {
+    font-size: 14px;
+}
+
+body .section-header .section-title:before,
+body .section-header .section-title:after {
+    display: none;
+}
+
+body #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-header .section-desc {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+body .lp-profile-user-bio p{
+    color: #fff;
+}
+
+body #learn-press-profile a {
+    text-decoration: none;
+}
+
+body .learn-press-profile-course__tab__inner{
+    margin-left: 0;
+}
+
+body .learn-press-filters > li {
+    list-style-type: none;
+}
+
+body #learn-press-course-tabs.course-tabs {
+    margin-top: 0;
+}
+
+body .course-extra-box__title{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+body .course-extra-box__title::after{
+    font-weight: 600;
+}
+
+body #learn-press-course-tabs .course-nav label,
+body #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-content .course-item .item-name {
+    font-weight: 500;
+    font-family: 'MontserratRegular';
+}
+
+body #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-header .section-left .section-title {
+    font-family: 'MontserratRegular';
+}
+
+body #learn-press-course .course-summary-sidebar .course-sidebar-preview .course-results-progress .course-progress .learn-press-progress {
+    margin-top: 20px;
+}
+
+body.post-type-archive-lp_course .lp-content-area,
+body.tax-course_category .lp-content-area {
+    padding-top: 50px;
+}
+
+body .lp-archive-courses .learn-press-courses-header h1 {
+    font-weight: 600;
+    font-family: 'MontserratRegular';
+}
+
+body.learnpress-checkout .lp-content-wrap {
+    padding-top: 50px;
+}
+
+body.learnpress-checkout .lp-content-wrap>h2{
+    font-family: 'MontserratRegular';
+}
+
+body #learn-press-profile-basic-information .form-field__50, 
+body form[name=profile-change-password] .form-field__50,
+body #learn-press-profile-basic-information .form-field__clear, 
+body form[name=profile-change-password] .form-field__clear,
+body .learn-press-form .form-fields .form-field {
+    list-style-type: none;
+}
+
+body .learnpress_avatar__cropper img {
+    margin-bottom: 15px;
+}
+
+body .learnpress_avatar__cropper .learnpress_avatar__button {
+    margin-right: 10px;
+    padding: 8px 20px;
+}
+
+body .learn-press-form .form-fields {
+    margin: 0;
+    padding: 0;
+}
+
+body #learn-press-profile #profile-nav .lp-profile-nav-tabs li.active>ul {
+    z-index: 0;
+}
+
+@media (max-width: 991px){
+
+    .services_wrapper .title_wrapper, .services_2_wrapper .title_wrapper {
+        width: 80%;
+    }
+
+    .services_wrapper .items_wrapper {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 16px;
+    }
+
+    .services_2_wrapper .item_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body .lp-archive-courses .learn-press-courses[data-layout=list] .course .course-item .course-wrap-thumbnail {
+        width: 35.8%;
+    }
+
+}
+
+@media (max-width: 412px){
+
+    .services_wrapper .items_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .services_2_wrapper .item_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .services_wrapper .services-item {
+        margin: 0;
+    }
+
+    .services_wrapper .title_wrapper, .services_2_wrapper .title_wrapper {
+        width: 90%;
+    }
+
+    body .lp-archive-courses .learn-press-courses[data-layout=list] .course .course-item .course-wrap-thumbnail {
+        width: 100%;
+    }
+
+}
